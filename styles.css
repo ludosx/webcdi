@@ -316,30 +316,7 @@ width: 100%;
 .link-box a {
 font-weight: 600;
 }
-.list {
-  width: 100%;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  border-radius: 0;
-  
-}
 
-.list__item {
-  list-style: none;
-  width: 100%;
-  text-align: center;
-  overflow: hidden;
-}
-
-.list__button {
-  display: flex;
-  align-items: center;
-  gap: 1em;
-  width: 70%;
-  margin: 0 auto;
-}
 .nav__link {
   color: #f6f7f9;
   display: block;
@@ -425,7 +402,7 @@ section {
   text-align: center;
   overflow: hidden;
   background-color: rgba(39, 39, 38, 0.1);
-  border-radius: 33%;
+  border-radius: 5%;
 }
 
 .list__item--click {
