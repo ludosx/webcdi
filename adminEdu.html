@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <title>Administracion educativa</title>
+
+</head>
+<body>
+    <div class="menu-wrap">
+        <input type="checkbox" class="toggler">
+        <div class="hamburger"><div></div></div>
+        <div class="menu">
+          <div>
+            <div>
+              <ul>
+                <ul class="list">
+                  <div class="logo">
+                      <img src="imagenes/Logo-de-SENA-png-verde-300x300-1.png" width="180px">
+                  </div>
+                  <br>
+      
+                  <li class="list__item">
+                      <div class="list__button">
+                          <img src="imagenes/i.svg" class="list__img">
+                          <a href="index.html" class="nav__link">Inicio</a>
+                      </div>
+                  </li>
+      
+                  <li class="list__item"></li>
+                      <div class="list__button">
+                          <img src="imagenes/a.svg" class="list__img">
+                          <a href="sena_interativo.html" class="nav__link">Sena interativo</a>
+                      </div>
+                  </li>
+      
+      
+                  <li class="list__item">
+                      <div class="list__button">
+                          <img src="imagenes/im.svg" class="list__img">
+                          <a href="imagen.html" class="nav__link">Imagenes Sena</a>
+                      </div>
+                  </li>
+      
+                  <li class="list__item">
+                        <div class="list__button">
+                          <img src="imagenes/con.svg" class="list__img">
+                          <a href="contacto.html" class="nav__link">Contacto</a>
+                      </div>
+                  </li>
+              </ul>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+
+    <div class="container-slider">
+        <div class="slider" id="slider">
+            <div class="slider__content">
+                
+            </div>
+            <div class="slider__content">
+                
+            </div>
+            <div class="slider__content">
+               
+            </div>
+            <div class="slider__content">
+                
+            </div>
+
+        </div>
+        <!-- Para el maicol del futuro-->
+        <!-- El div de abajo permite crear una clase con dos nombres dentro de este, lo que permite modificar un elemento en conjunto y por separado al mismo tiempo sin crear otro div-->
+        <div class="btn__slider slider__btn--right" id="btn-right">></div>
+        <div class="btn__slider slider__btn--left" id="btn-left"><</div>
+    </div>
+    <!--<section class="container-contenido">
+        <div class="cuadros cuadro1">
+            <h3>Quienes somos?</h3>
+            <br>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum numquam tempora cumque non mollitia eaque aliquid magni recusandae minima libero quibusdam corrupti commodi praesentium reiciendis at quisquam, incidunt repellendus saepe!</p>
+        </div>
+        <div class="cuadros cuadro2">
+            <h3>Quienes somos?</h3>
+            <br>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum numquam tempora cumque non mollitia eaque aliquid magni recusandae minima libero quibusdam corrupti commodi praesentium reiciendis at quisquam, incidunt repellendus saepe!</p>
+        </div>
+        <div class="cuadros cuadro3">
+            <h3>Quienes somos?</h3>
+            <br>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum numquam tempora cumque non mollitia eaque aliquid magni recusandae minima libero quibusdam corrupti commodi praesentium reiciendis at quisquam, incidunt repellendus saepe!</p>
+        </div>
+    </section>-->
+    <section class="container-content">
+        <div class="content-elements">
+        <img src="imagenes/paraSlider1.jpg">
+        <div class="content-text">
+        <h1>Somos una parte </h1>
+        <h1>del sena cditi.</h1>
+        <p class="text__personalizado text-parrafo__content">Somos parte de un conjunto fundamental en la formacion profesional de todos nuestro aprendices</p>
+            <button class="text__button" id= "btn1" onclick="cambiarParrafo(parrafo1,this)">¿Quienes somos?</button><button class="text__button" id= "btn2" onclick="cambiarParrafo(parrafo2,this)">¿Nuestra funcion?</button><button class="text__button" id= "btn3"  onclick="cambiarParrafo(parrafo3,this)">¿Servicios?</button>
+            <p class="text-parrafo__content"  id="nuevo__parrafo"></p>
+
+        </div>
+    </div>
+    </section>
+    <script src="scripts/mainAreas.js"></script>
+</body>
+</html>
