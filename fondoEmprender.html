@@ -7,7 +7,7 @@
     <title>Fondo Emprender</title>
 
 </head>
-<body onload="logicAreas()">
+<body id="0">
     <div class="menu-wrap">
         <input type="checkbox" class="toggler">
         <div class="hamburger"><div></div></div>
@@ -58,21 +58,7 @@
       <br>
 
     <div class="container-slider">
-        <div class="slider" id="slider">
-            <div class="slider__content">
-                
-            </div>
-            <div class="slider__content">
-                
-            </div>
-            <div class="slider__content">
-               
-            </div>
-            <div class="slider__content">
-                
-            </div>
-
-        </div>
+        <div class="slider" id="slider"></div>
         <!-- Para el maicol del futuro-->
         <!-- El div de abajo permite crear una clase con dos nombres dentro de este, lo que permite modificar un elemento en conjunto y por separado al mismo tiempo sin crear otro div-->
         <div class="btn__slider slider__btn--right" id="btn-right">></div>
@@ -97,16 +83,23 @@
     </section>-->
     <section class="container-content">
         <div class="content-elements">
-        <img src="img/paraSlider1.jpg">
+        <img src="" id="img-from__text" class="container-content__img">
         <div class="content-text">
         <h1 id="title__text"></h1>
         <p class="text__personalizado text-parrafo__content" id="first-text__area"></p>
             <button class="text__button" id= "btn1">¿Quienes somos?</button><button class="text__button" id= "btn2">¿Nuestra funcion?</button><button class="text__button" id= "btn3">¿Servicios?</button>
             <p class="text-parrafo__content"  id="nuevo__parrafo"></p>
+            <div id="content-text__parrafo"></div>  
+            
 
         </div>
     </div>
     </section>
+    <template id="slider-img">
+        <div class="slider__content">
+            <img src=""  class="img-slider" id="img-api__strapi">
+        </div>
+    </template>
     <script src="scripts/mainAreas.js"></script>
     <script src="scripts/main.js"></script>
 </body>

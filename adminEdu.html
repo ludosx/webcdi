@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles/style.css">
-    <title>Administracion educativa</title>
+    <title>Admin Educativa</title>
 
 </head>
-<body>
+<body id="1">
     <div class="menu-wrap">
         <input type="checkbox" class="toggler">
         <div class="hamburger"><div></div></div>
@@ -17,20 +17,20 @@
               <ul>
                 <ul class="list">
                   <div class="logo">
-                      <img src="imagenes/Logo-de-SENA-png-verde-300x300-1.png" width="180px">
+                      <img src="img/Logo-de-SENA-png-verde-300x300-1.png" width="180px">
                   </div>
                   <br>
       
                   <li class="list__item">
                       <div class="list__button">
-                          <img src="imagenes/i.svg" class="list__img">
+                          <img src="img/i.svg" class="list__img">
                           <a href="index.html" class="nav__link">Inicio</a>
                       </div>
                   </li>
       
                   <li class="list__item"></li>
                       <div class="list__button">
-                          <img src="imagenes/a.svg" class="list__img">
+                          <img src="img/a.svg" class="list__img">
                           <a href="sena_interativo.html" class="nav__link">Sena interativo</a>
                       </div>
                   </li>
@@ -38,14 +38,14 @@
       
                   <li class="list__item">
                       <div class="list__button">
-                          <img src="imagenes/im.svg" class="list__img">
-                          <a href="imagen.html" class="nav__link">Imagenes Sena</a>
+                          <img src="img/im.svg" class="list__img">
+                          <a href="services.html" class="nav__link">Imagenes Sena</a>
                       </div>
                   </li>
       
                   <li class="list__item">
                         <div class="list__button">
-                          <img src="imagenes/con.svg" class="list__img">
+                          <img src="img/con.svg" class="list__img">
                           <a href="contacto.html" class="nav__link">Contacto</a>
                       </div>
                   </li>
@@ -58,21 +58,7 @@
       <br>
 
     <div class="container-slider">
-        <div class="slider" id="slider">
-            <div class="slider__content">
-                
-            </div>
-            <div class="slider__content">
-                
-            </div>
-            <div class="slider__content">
-               
-            </div>
-            <div class="slider__content">
-                
-            </div>
-
-        </div>
+        <div class="slider" id="slider"></div>
         <!-- Para el maicol del futuro-->
         <!-- El div de abajo permite crear una clase con dos nombres dentro de este, lo que permite modificar un elemento en conjunto y por separado al mismo tiempo sin crear otro div-->
         <div class="btn__slider slider__btn--right" id="btn-right">></div>
@@ -97,17 +83,24 @@
     </section>-->
     <section class="container-content">
         <div class="content-elements">
-        <img src="imagenes/paraSlider1.jpg">
+        <img src="" id="img-from__text" class="container-content__img">
         <div class="content-text">
-        <h1>Somos una parte </h1>
-        <h1>del sena cditi.</h1>
-        <p class="text__personalizado text-parrafo__content">Somos parte de un conjunto fundamental en la formacion profesional de todos nuestro aprendices</p>
-            <button class="text__button" id= "btn1" onclick="cambiarParrafo(parrafo1,this)">¿Quienes somos?</button><button class="text__button" id= "btn2" onclick="cambiarParrafo(parrafo2,this)">¿Nuestra funcion?</button><button class="text__button" id= "btn3"  onclick="cambiarParrafo(parrafo3,this)">¿Servicios?</button>
+        <h1 id="title__text"></h1>
+        <p class="text__personalizado text-parrafo__content" id="first-text__area"></p>
+            <button class="text__button" id= "btn1">¿Quienes somos?</button><button class="text__button" id= "btn2">¿Nuestra funcion?</button><button class="text__button" id= "btn3">¿Servicios?</button>
             <p class="text-parrafo__content"  id="nuevo__parrafo"></p>
+            <div id="content-text__parrafo"></div>  
+            
 
         </div>
     </div>
     </section>
+    <template id="slider-img">
+        <div class="slider__content">
+            <img src=""  class="img-slider" id="img-api__strapi">
+        </div>
+    </template>
     <script src="scripts/mainAreas.js"></script>
+    <script src="scripts/main.js"></script>
 </body>
 </html>
